@@ -42,7 +42,7 @@ describe('IDs', function() {
 
   describe('#claim', function() {
 
-    it('should set id as used', function() {
+    it('should claim', function() {
 
       // given
       var ids = new Ids();
@@ -52,6 +52,21 @@ describe('IDs', function() {
 
       // then
       expect(ids.assigned('foo')).to.be.true;
+    });
+
+
+    it('should claim by element', function() {
+
+      // given
+      var ids = new Ids();
+
+      var element = {};
+
+      // when
+      ids.claim('foo', element);
+
+      // then
+      expect(ids.assigned('foo')).to.equal(element);
     });
 
   });

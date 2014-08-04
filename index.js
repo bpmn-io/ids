@@ -31,9 +31,10 @@ Ids.prototype.next = function(element) {
  * Manually claim an existing id.
  *
  * @param {String} id
+ * @param {String} [element] element the id is claimed by
  */
-Ids.prototype.claim = function(id) {
-  this._seed.set(id, true);
+Ids.prototype.claim = function(id, element) {
+  this._seed.set(id, element || true);
 };
 
 /**
