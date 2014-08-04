@@ -1,0 +1,36 @@
+{
+  "name": "ids",
+  "version": "0.0.0",
+  "description": "Simple id generation and caching",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmn-io/ids"
+  },
+  "keywords": [
+    "id",
+    "ids",
+    "id-generator"
+  ],
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/Nikku"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.0",
+    "grunt-jsdoc": "~0.5.1",
+    "grunt-mocha-test": "^0.11.0",
+    "grunt-release": "^0.7.0",
+    "load-grunt-tasks": "~0.3.0",
+    "lodash": "^2.4.1",
+    "chai": "^1.9.1"
+  },
+  "dependencies": {
+    "hat": "0.0.3"
+  }
+}
