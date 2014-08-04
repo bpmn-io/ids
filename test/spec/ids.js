@@ -21,6 +21,22 @@ describe('IDs', function() {
       expect(i1).to.be.defined;
     });
 
+
+    it('should bind id to element', function() {
+
+      // given
+      var ids = new Ids();
+
+      var element = {};
+
+      // when
+      var i1 = ids.next(element);
+
+      // then
+      expect(i1).to.be.defined;
+      expect(ids.assigned(i1)).to.equal(element);
+    });
+
   });
 
 

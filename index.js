@@ -19,10 +19,12 @@ module.exports = Ids;
 /**
  * Generate a next id.
  *
+ * @param {Object} [element] element to bind the id to
+ *
  * @return {String} id
  */
-Ids.prototype.next = function() {
-  return this._seed(true);
+Ids.prototype.next = function(element) {
+  return this._seed(element || true);
 };
 
 /**
@@ -41,5 +43,5 @@ Ids.prototype.claim = function(id) {
  * @return {Boolean}
  */
 Ids.prototype.assigned = function(id) {
-  return !!this._seed.get(id);
+  return this._seed.get(id) || false;
 };
