@@ -42,8 +42,8 @@ describe('IDs', function() {
       var i1 = ids.nextPrefixed('ID_');
 
       // then
-      expect(i1).to.be.defined;
-      expect(i1.match(/^ID_/)).to.be.an('array');
+      expect(ids.assigned(i1)).to.be.true;
+      expect(i1).to.match(/^ID_.{7}$/);
       expect(i1.length).to.be.equal(10);
     });
 
