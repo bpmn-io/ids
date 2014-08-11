@@ -9,7 +9,7 @@ describe('IDs', function() {
 
   describe('#next', function() {
 
-    it('should create id', function() {
+    it('should create custom length ids', function() {
 
       // given
       var ids = new Ids();
@@ -19,6 +19,32 @@ describe('IDs', function() {
 
       // then
       expect(i1).to.be.defined;
+    });
+
+    it('should create id', function() {
+
+      // given
+      var ids = new Ids([ 32, 36, 1 ]);
+
+      // when
+      var i1 = ids.next();
+
+      // then
+      expect(i1.length).to.be.equal(7);
+    });
+
+    it('should create id with prefix', function() {
+
+      // given
+      var ids = new Ids([ 32, 36, 1 ]);
+
+      // when
+      var i1 = ids.nextPrefixed('ID_');
+
+      // then
+      expect(i1).to.be.defined;
+      expect(i1.match(/^ID_/)).to.be.an('array');
+      expect(i1.length).to.be.equal(10);
     });
 
 

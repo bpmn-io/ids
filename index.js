@@ -11,7 +11,8 @@ var hat = require('hat');
  * @param {Seed} seed
  */
 function Ids(seed) {
-  this._seed = seed || hat.rack(128, 36, 1);
+  seed = seed || [ 128, 36, 1 ];
+  this._seed = seed.length ? hat.rack(seed[0], seed[1], seed[2]) : seed;
 }
 
 module.exports = Ids;
@@ -25,6 +26,27 @@ module.exports = Ids;
  */
 Ids.prototype.next = function(element) {
   return this._seed(element || true);
+};
+
+/**
+ * Generate a next id with a given prefix.
+ *
+ * @param {Object} [element] element to bind the id to
+ *
+ * @return {String} id
+ */
+Ids.prototype.nextPrefixed = function(prefix, element) {
+  var id;
+
+  do {
+    id = prefix + this.next(true);
+  } while (this.assigned(id));
+
+  // claim {prefix}{random}
+  this.claim(id, element);
+
+  // return
+  return id;
 };
 
 /**
