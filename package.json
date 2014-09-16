@@ -1,6 +1,6 @@
 {
   "name": "ids",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Simple id generation and caching",
   "scripts": {
     "test": "grunt test"
