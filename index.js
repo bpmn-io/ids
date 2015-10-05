@@ -68,3 +68,12 @@ Ids.prototype.claim = function(id, element) {
 Ids.prototype.assigned = function(id) {
   return this._seed.get(id) || false;
 };
+
+/**
+ * Unclaim an id.
+ *
+ * @param  {String} id the id to unclaim
+ */
+Ids.prototype.unclaim = function(id) {
+  delete this._seed.hats[id];
+};

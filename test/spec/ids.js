@@ -139,4 +139,36 @@ describe('IDs', function() {
 
   });
 
+  describe('#unclaim', function() {
+
+    it('should unclaim an id', function() {
+
+      // given
+      var ids = new Ids();
+      ids.claim('foo');
+
+      // if I unclaim id '1'
+      ids.unclaim('foo');
+
+      // then 1 is removed
+      expect(ids.assigned('foo')).to.be.false;
+
+    });
+
+    it('should accept non-existing values', function() {
+
+      // given
+      var ids = new Ids();
+      ids.claim('foo');
+
+      // if I unclaim an unexisting id, it should not throw an error
+      ids.unclaim('unexisting');
+
+      // then 1 is not removed
+      expect(ids.assigned('foo')).to.be.true;
+
+    });
+
+  });
+
 });
