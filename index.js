@@ -11,6 +11,11 @@ var hat = require('hat');
  * @param {Seed} seed
  */
 function Ids(seed) {
+
+  if (!(this instanceof Ids)) {
+    return new Ids(seed);
+  }
+
   seed = seed || [ 128, 36, 1 ];
   this._seed = seed.length ? hat.rack(seed[0], seed[1], seed[2]) : seed;
 }

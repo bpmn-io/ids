@@ -7,6 +7,20 @@ var Ids = require('../../');
 
 describe('IDs', function() {
 
+  describe('creation', function() {
+
+    it('should new construct', function() {
+      expect(new Ids() instanceof Ids).to.be.true;
+    });
+
+
+    it('should functional construct', function() {
+      expect(Ids() instanceof Ids).to.be.true;
+    });
+
+  });
+
+
   describe('#next', function() {
 
     it('should create custom length ids', function() {
