@@ -44,15 +44,6 @@ module.exports = function(grunt) {
         files: [ '<%= config.sources %>/**/*.js', '<%= config.tests %>/spec/**/*.js' ],
         tasks: [ 'test' ]
       }
-    },
-
-    jsdoc: {
-      dist: {
-        src: [ 'index.js' ],
-        options: {
-          destination: 'docs/api'
-        }
-      }
     }
   });
 
@@ -62,5 +53,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('auto-test', [ 'test', 'watch:test' ]);
 
-  grunt.registerTask('default', [ 'jshint', 'test', 'jsdoc' ]);
+  grunt.registerTask('default', [ 'jshint', 'test' ]);
 };
