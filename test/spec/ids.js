@@ -132,6 +132,63 @@ describe('IDs', function() {
   });
 
 
+  describe('#clear', function() {
+
+    it('should remove all assigned ids', function() {
+
+      // given
+      var ids = new Ids();
+
+      var i1 = ids.next();
+      var i2 = ids.next();
+
+      ids.claim('foo');
+
+      // when
+      ids.clear();
+
+      // then
+      expect(ids.assigned(i1)).to.be.false;
+      expect(ids.assigned(i2)).to.be.false;
+      expect(ids.assigned('foo')).to.be.false;
+    });
+
+
+    it('should allow #claim after clear', function() {
+
+      // given
+      var ids = new Ids();
+
+      ids.claim('foo');
+
+      // clear
+      ids.clear();
+
+      // then
+      expect(function() {
+        ids.claim('foo');
+      }).not.to.throw;
+    });
+
+
+    it('should allow #next after clear', function() {
+
+      // given
+      var ids = new Ids();
+
+      ids.next();
+
+      // clear
+      ids.clear();
+
+      // then
+      expect(function() {
+        ids.next();
+      }).not.to.throw;
+    });
+  });
+
+
   describe('performance', function() {
 
     it('should generate 100000 ids', function() {

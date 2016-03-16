@@ -82,3 +82,17 @@ Ids.prototype.assigned = function(id) {
 Ids.prototype.unclaim = function(id) {
   delete this._seed.hats[id];
 };
+
+
+/**
+ * Clear all claimed ids.
+ */
+Ids.prototype.clear = function() {
+
+  var hats = this._seed.hats,
+      id;
+
+  for (id in hats) {
+    this.unclaim(id);
+  }
+};
