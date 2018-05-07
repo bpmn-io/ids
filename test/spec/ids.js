@@ -1,8 +1,8 @@
 'use strict';
 
-var _ = require('lodash');
-
 var Ids = require('../../');
+
+var expect = require('chai').expect;
 
 
 describe('IDs', function() {
@@ -210,6 +210,7 @@ describe('IDs', function() {
 
   });
 
+
   describe('#unclaim', function() {
 
     it('should unclaim an id', function() {
@@ -225,6 +226,7 @@ describe('IDs', function() {
       expect(ids.assigned('foo')).to.be.false;
 
     });
+
 
     it('should accept non-existing values', function() {
 
