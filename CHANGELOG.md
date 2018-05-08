@@ -6,6 +6,10 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.2.2
+
+* `FIX`: correctly export TypeScript definitions as CJS
+
 ## 0.2.1
 
 * `CHORE`: add Typescript definitions
