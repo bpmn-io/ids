@@ -5,7 +5,7 @@
   "scripts": {
     "all": "run-s lint test",
     "lint": "eslint .",
-    "test": "mocha test/spec"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",

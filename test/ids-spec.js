@@ -1,6 +1,6 @@
 'use strict';
 
-var Ids = require('../../');
+var Ids = require('..');
 
 var expect = require('chai').expect;
 
