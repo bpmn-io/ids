@@ -1,4 +1,6 @@
-export default class Ids {
+export = Ids;
+
+declare class Ids {
 
   /**
    * Create a new id generator / cache instance.
@@ -16,7 +18,7 @@ export default class Ids {
    *
    * @return {String} id
    */
-  public next(element: any): ID;
+  public next(element?: any): ID;
 
   /**
    * Generate a next id with a given prefix.
@@ -25,7 +27,7 @@ export default class Ids {
    *
    * @return {String} id
    */
-  public nextPrefixed(prefix: string, element: any): ID;
+  public nextPrefixed(prefix: string, element?: any): ID;
 
   /**
    * Manually claim an existing id.
@@ -33,7 +35,7 @@ export default class Ids {
    * @param {String} id
    * @param {String} [element] element the id is claimed by
    */
-  public claim(id: ID, element: any): void;
+  public claim(id: ID, element?: any): void;
 
   /**
    * Returns true if the given id has already been assigned.
@@ -56,5 +58,5 @@ export default class Ids {
   public clear(): void;
 }
 
-export type Seed = [number, number] | [number, number, number];
-export type ID = string;
+type Seed = [number, number] | [number, number, number];
+type ID = string;
