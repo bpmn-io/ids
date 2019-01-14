@@ -1,8 +1,8 @@
-'use strict';
+import Ids from '..';
 
-var Ids = require('..');
-
-var expect = require('chai').expect;
+import {
+  expect
+} from 'chai';
 
 
 describe('IDs', function() {
