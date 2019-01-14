@@ -1,6 +1,4 @@
-'use strict';
-
-var hat = require('hat');
+import hat from 'hat';
 
 
 /**
@@ -10,7 +8,7 @@ var hat = require('hat');
  *
  * @param {Seed} seed
  */
-function Ids(seed) {
+export default function Ids(seed) {
 
   if (!(this instanceof Ids)) {
     return new Ids(seed);
@@ -19,8 +17,6 @@ function Ids(seed) {
   seed = seed || [ 128, 36, 1 ];
   this._seed = seed.length ? hat.rack(seed[0], seed[1], seed[2]) : seed;
 }
-
-module.exports = Ids;
 
 /**
  * Generate a next id.
