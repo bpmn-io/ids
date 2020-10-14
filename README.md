@@ -1,6 +1,6 @@
 # ids
 
-[![Build Status](https://travis-ci.org/bpmn-io/ids.svg)](https://travis-ci.org/bpmn-io/ids)
+[![Build Status](https://travis-ci.com/bpmn-io/ids.svg)](https://travis-ci.com/bpmn-io/ids)
 
 A simple caching id generation utility.
 
