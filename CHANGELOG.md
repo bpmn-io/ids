@@ -6,6 +6,10 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 1.0.1
+
+* `FIX`: mark as module
+
 ## 1.0.0
 
 * `CHORE`: migrate to ES modules
