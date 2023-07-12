@@ -1,4 +1,4 @@
-export default class Ids {
+declare class Ids {
 
   /**
    * Create a new id generator / cache instance.
@@ -58,3 +58,5 @@ export default class Ids {
 
 type Seed = [number, number] | [number, number, number];
 type ID = string;
+
+export = Ids;
