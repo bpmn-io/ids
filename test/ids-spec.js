@@ -1,4 +1,4 @@
-import Ids from '..';
+import Ids from '../index.js';
 
 import {
   expect
@@ -32,7 +32,7 @@ describe('IDs', function() {
       var i1 = ids.next();
 
       // then
-      expect(i1).to.be.defined;
+      expect(i1).to.exist;
     });
 
     it('should create id', function() {
@@ -73,7 +73,7 @@ describe('IDs', function() {
       var i1 = ids.next(element);
 
       // then
-      expect(i1).to.be.defined;
+      expect(i1).to.exist;
       expect(ids.assigned(i1)).to.equal(element);
     });
 
