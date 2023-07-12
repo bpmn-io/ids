@@ -5,7 +5,7 @@
   "scripts": {
     "all": "run-s lint test bundle",
     "lint": "eslint .",
-    "bundle": "microbundle --no-compress --name Ids --external none",
+    "bundle": "microbundle --no-compress --name Ids --external none --generateTypes false",
     "test": "mocha test"
   },
   "engines": {
@@ -39,7 +39,7 @@
     "eslint": "^8.44.0",
     "eslint-plugin-bpmn-io": "^1.0.0",
     "hat": "0.0.3",
-    "microbundle": "^0.9.0",
+    "microbundle": "^0.15.1",
     "mocha": "^10.2.0",
     "npm-run-all": "^4.1.3"
   }
