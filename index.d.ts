@@ -1,6 +1,4 @@
-export = Ids;
-
-declare class Ids {
+export default class Ids {
 
   /**
    * Create a new id generator / cache instance.
