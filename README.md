@@ -1,18 +1,17 @@
 # ids
 
-[![Build Status](https://travis-ci.com/bpmn-io/ids.svg)](https://travis-ci.com/bpmn-io/ids)
+[![Build Status](https://github.com/bpmn-io/ids/actions/workflows/CI.yml/badge.svg)](https://github.com/bpmn-io/ids/actions/workflows/CI.yml)
 
 A simple caching id generation utility.
-
 
 ## Usage
 
 ```javascript
-var Ids = require('ids');
+import Ids from 'ids';
 
-var ids = new Ids();
+const ids = new Ids();
 
-var next = ids.next(); // returns id
+const next = ids.next(); // returns id
 
 ids.claim('f71a81'); // claim id as already existing
 
