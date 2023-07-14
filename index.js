@@ -1,12 +1,15 @@
 import hat from 'hat';
 
+/**
+ * @typedef { [ number, number ] | [ number, number, number ] } Seed
+ */
 
 /**
  * Create a new id generator / cache instance.
  *
  * You may optionally provide a seed that is used internally.
  *
- * @param {Seed} seed
+ * @param {Seed} [seed]
  */
 export default function Ids(seed) {
 
