@@ -6,6 +6,10 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 1.0.4
+
+_Revert to v1.0.0 to avoid breaking changes in patch._
+
 ## 1.0.3
 
 _Revert v1.0.2._
