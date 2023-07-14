@@ -1,0 +1,6 @@
+!dist
+test
+.travis.yml
+.eslintignore
+.eslintrc
+index.js

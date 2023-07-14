@@ -1,3 +1,5 @@
+export = Ids;
+
 declare class Ids {
 
   /**
@@ -58,5 +60,3 @@ declare class Ids {
 
 type Seed = [number, number] | [number, number, number];
 type ID = string;
-
-export = Ids;
