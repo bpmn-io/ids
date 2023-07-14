@@ -6,6 +6,14 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 2.0.0
+
+* `FEAT`: mark as module
+
+### Breaking Changes
+
+Library is now an ES module, and requires node >=16 to work.
+
 ## 1.0.4
 
 _Revert to v1.0.0 to avoid breaking changes in patch._
