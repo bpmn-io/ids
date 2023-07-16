@@ -1,6 +1,6 @@
 {
   "name": "ids",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple id generation and caching",
   "scripts": {
     "all": "run-s lint test bundle",
