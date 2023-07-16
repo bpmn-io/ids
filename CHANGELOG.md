@@ -14,9 +14,13 @@ ___Note:__ Yet to be released changes appear here._
 
 Library is now an ES module, and requires node >=16 to work.
 
+## 1.0.5
+
+_Republish of `v1.0.4` with `dist` folder._
+
 ## 1.0.4
 
-_Revert to v1.0.0 to avoid breaking changes in patch._
+_Revert to `v1.0.0` to avoid breaking changes in patch._
 
 ## 1.0.3
 
