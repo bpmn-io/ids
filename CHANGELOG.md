@@ -6,6 +6,10 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 2.0.1
+
+_Republish of `v2.0.0` with `dist` folder._
+
 ## 2.0.0
 
 * `FEAT`: mark as module
