@@ -16,7 +16,7 @@ _Republish of `v2.0.0` with `dist` folder._
 
 ### Breaking Changes
 
-Library is now an ES module, and requires node >=16 to work.
+* Library is now an ES module, and requires node >=16 to work.
 
 ## 1.0.5
 
