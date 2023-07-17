@@ -6,7 +6,8 @@
     "all": "run-s lint test bundle",
     "lint": "eslint .",
     "bundle": "microbundle --no-compress --name Ids --external none --generateTypes false",
-    "test": "mocha test"
+    "test": "mocha test",
+    "prepublishOnly": "run-s bundle"
   },
   "engines": {
     "node": ">= 16"
