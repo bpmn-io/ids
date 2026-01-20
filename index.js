@@ -11,7 +11,7 @@ import hat from 'hat';
  *
  * @param {Seed} [seed]
  */
-export default function Ids(seed) {
+export function Ids(seed) {
 
   if (!(this instanceof Ids)) {
     return new Ids(seed);
