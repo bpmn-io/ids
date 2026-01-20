@@ -1,4 +1,4 @@
-import Ids from '../index.js';
+import Ids from 'ids';
 
 import {
   expect
