@@ -4,7 +4,7 @@ jobs:
   Build:
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ ubuntu-latest ]
         node-version: [ 24 ]
 
     runs-on: ${{ matrix.os }}
