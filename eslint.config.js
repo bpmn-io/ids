@@ -3,7 +3,10 @@ import bpmnIoPlugin from 'eslint-plugin-bpmn-io';
 const files = {
   ignored: [ 'dist' ],
   test: [ 'test/**/*.js' ],
-  build: [ 'eslint.config.js' ]
+  build: [
+    'eslint.config.js',
+    'rollup.config.js'
+  ]
 };
 
 export default [
@@ -19,6 +22,14 @@ export default [
       files: files.build
     };
   }),
+
+  // support "with" import
+  {
+    files: files.build,
+    languageOptions: {
+      ecmaVersion: 2025
+    }
+  },
 
   // lib + test
   ...bpmnIoPlugin.configs.node.map(config => {
