@@ -35,6 +35,7 @@ describe('IDs', function() {
       expect(i1).to.exist;
     });
 
+
     it('should create id', function() {
 
       // given
@@ -46,6 +47,7 @@ describe('IDs', function() {
       // then
       expect(i1.length).to.be.equal(7);
     });
+
 
     it('should create id with prefix', function() {
 
