@@ -42,8 +42,8 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^6.2.2",
-    "eslint": "^8.44.0",
-    "eslint-plugin-bpmn-io": "^1.0.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-bpmn-io": "^2.2.0",
     "hat": "0.0.3",
     "microbundle": "^0.15.1",
     "mocha": "^11.7.5",
