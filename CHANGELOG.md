@@ -6,6 +6,16 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 3.0.0
+
+* `CHORE`: drop UMD and CJS bundle ([#9](https://github.com/bpmn-io/ids/pull/9))
+* `CHORE`: use name `Ids` export ([#9](https://github.com/bpmn-io/ids/pull/9))
+
+### Breaking Changes
+
+* Library is now ESM only, and can be consumed in Node >= 20.12
+* Moved to named export `Ids` instead of default one
+
 ## 2.0.1
 
 _Republish of `v2.0.0` with `dist` folder._
