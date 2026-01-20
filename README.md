@@ -7,7 +7,7 @@ A simple caching id generation utility.
 ## Usage
 
 ```javascript
-import Ids from 'ids';
+import { Ids } from 'ids';
 
 const ids = new Ids();
 
