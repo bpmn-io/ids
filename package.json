@@ -10,7 +10,7 @@
     "prepublishOnly": "run-s bundle"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= 20.12"
   },
   "type": "module",
   "source": "./index.js",
