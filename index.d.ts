@@ -59,4 +59,8 @@ declare class Ids {
 type Seed = [number, number] | [number, number, number];
 type ID = string;
 
-export = Ids;
+export {
+  Ids,
+  Seed,
+  ID
+}
