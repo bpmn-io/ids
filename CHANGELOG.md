@@ -6,6 +6,10 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 3.0.1
+
+* `FIX`: correct type declaration
+
 ## 3.0.0
 
 * `CHORE`: drop UMD and CJS bundle ([#9](https://github.com/bpmn-io/ids/pull/9))
