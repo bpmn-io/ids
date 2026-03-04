@@ -14,7 +14,7 @@ declare class Ids {
    *
    * @param {Object} [element] element to bind the id to
    *
-   * @return {String} id
+   * @return {string} id
    */
   public next(element?: any): ID;
 
@@ -23,30 +23,30 @@ declare class Ids {
    *
    * @param {Object} [element] element to bind the id to
    *
-   * @return {String} id
+   * @return {string} id
    */
   public nextPrefixed(prefix: string, element?: any): ID;
 
   /**
    * Manually claim an existing id.
    *
-   * @param {String} id
-   * @param {String} [element] element the id is claimed by
+   * @param {string} id
+   * @param {any} [element] element the id is claimed by
    */
   public claim(id: ID, element?: any): void;
 
   /**
    * Returns true if the given id has already been assigned.
    *
-   * @param  {String} id
-   * @return {Boolean}
+   * @param  {string} id
+   * @return {boolean}
    */
   public assigned(id: ID): boolean;
 
   /**
    * Unclaim an id.
    *
-   * @param  {String} id the id to unclaim
+   * @param  {string} id the id to unclaim
    */
   public unclaim(id: ID): void;
 
