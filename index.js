@@ -26,7 +26,7 @@ export function Ids(seed) {
  *
  * @param {Object} [element] element to bind the id to
  *
- * @return {String} id
+ * @return {string} id
  */
 Ids.prototype.next = function(element) {
   return this._seed(element || true);
@@ -37,7 +37,7 @@ Ids.prototype.next = function(element) {
  *
  * @param {Object} [element] element to bind the id to
  *
- * @return {String} id
+ * @return {string} id
  */
 Ids.prototype.nextPrefixed = function(prefix, element) {
   var id;
@@ -56,8 +56,8 @@ Ids.prototype.nextPrefixed = function(prefix, element) {
 /**
  * Manually claim an existing id.
  *
- * @param {String} id
- * @param {String} [element] element the id is claimed by
+ * @param {string} id
+ * @param {any} [element] element the id is claimed by
  */
 Ids.prototype.claim = function(id, element) {
   this._seed.set(id, element || true);
@@ -66,8 +66,8 @@ Ids.prototype.claim = function(id, element) {
 /**
  * Returns true if the given id has already been assigned.
  *
- * @param  {String} id
- * @return {Boolean}
+ * @param  {string} id
+ * @return {boolean}
  */
 Ids.prototype.assigned = function(id) {
   return this._seed.get(id) || false;
@@ -76,7 +76,7 @@ Ids.prototype.assigned = function(id) {
 /**
  * Unclaim an id.
  *
- * @param  {String} id the id to unclaim
+ * @param  {string} id the id to unclaim
  */
 Ids.prototype.unclaim = function(id) {
   delete this._seed.hats[id];
