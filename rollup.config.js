@@ -17,7 +17,7 @@ export default [
   {
     input: srcEntry,
     output: [
-      { file: pkg.exports['.'], format: 'es' }
+      { file: pkg.exports['.'].default, format: 'es' }
     ],
     plugins: pgl()
   }
