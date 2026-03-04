@@ -6,6 +6,10 @@ All notable changes to [ids](https://github.com/bpmn-io/ids) are documented here
 
 ___Note:__ Yet to be released changes appear here._
 
+## 3.0.2
+
+* `FIX`: correct type declaration ([#10](https://github.com/bpmn-io/ids/issues/10), [#11](https://github.com/bpmn-io/ids/pull/11))
+
 ## 3.0.1
 
 * `FIX`: correct type declaration
